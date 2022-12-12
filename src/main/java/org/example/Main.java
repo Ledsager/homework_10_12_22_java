@@ -16,7 +16,6 @@ public class Main {
             numB = scanner.nextInt();
             if ((numA > 0) && (numB < 0)) {
                 sum++;
-
             }
             numA = numB;
         }
