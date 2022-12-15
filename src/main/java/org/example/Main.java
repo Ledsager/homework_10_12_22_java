@@ -13,11 +13,11 @@ public class Main {
         System.out.print("Введите температуру: ");
         double a = scanner.nextInt();
         scanner.close();
-        Temperature celsium = new Temperature(a);
-//        double b=22.2;
-//        b = celsium.temperCelsius(a);
+        Converter kelvin = new convertKelvin1();
+        Converter fahrenheit = new convertFahrenheit1();
+
         System.out.println("Temperature Celsius =  " + a);
-        System.out.println("Temperature Kelvin =  " + celsium.tempKelvin(celsium));
-        System.out.println("Temperature Fahrenheit =  " + celsium.tempFahrenheit(celsium));
+        System.out.println("Temperature Kelvin =  " + kelvin.convertValue(a));
+        System.out.println("Temperature Fahrenheit =  " + fahrenheit.convertValue(a));
     }
 }
